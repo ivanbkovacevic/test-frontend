@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border-top: 1px solid $color-gray;
+    padding: 24px 60px;
+
+    @include media-breakpoint-down(xs) { 
+        padding: 3px 6px;
+    }
+
+    background-color: $color-gray;
+    color:blue;
+    h1{
+        font-size: 5rem;
+    }
+}

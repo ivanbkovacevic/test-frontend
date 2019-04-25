@@ -1,0 +1,19 @@
+.my-navbar{
+    background-color: $color-green;
+    font-size: 2rem;
+    height: 100px;
+    
+
+    li{
+        padding: 0 20px;
+    }
+
+    .navbar-collapse{
+        @include media-breakpoint-down(sm) { 
+            margin-left: 80%;
+            background-color: $color-green;
+            font-size: 1.5rem;
+        }
+      
+    }
+}
