@@ -9317,9 +9317,42 @@ body {
 .my-navbar {
   background-color: #0cc00c;
   font-size: 2rem;
-  height: 100px; }
+  height: 100px;
+  color: white; }
+  .my-navbar .navbar-brand {
+    margin-left: 30%;
+    color: white; }
+  .my-navbar .navbar-toggler {
+    background-color: #c21633; }
+  .my-navbar .navbar-toggler-icon {
+    background-color: white; }
+  .my-navbar .my-active {
+    background-color: #c21633; }
   .my-navbar li {
-    padding: 0 20px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20px;
+    height: 100px;
+    -webkit-transform: skewX(30deg);
+            transform: skewX(30deg);
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all; }
+    .my-navbar li .nav-link {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      -webkit-transform: skewX(-30deg);
+              transform: skewX(-30deg);
+      padding: 30px 0px;
+      color: white; }
+    .my-navbar li:hover {
+      background-color: #c21633; }
   @media (max-width: 767.98px) {
     .my-navbar .navbar-collapse {
       margin-left: 80%;
@@ -9329,33 +9362,133 @@ body {
 .home-header {
   color: green;
   height: 500px;
-  overflow: hidden;
-  padding: 0 50px; }
+  overflow: hidden; }
+  .home-header .my-carousel {
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .home-header .my-carousel-1 {
+      background-image: url(../img/benzinska_pumpa.jpg); }
+    .home-header .my-carousel-2 {
+      background-image: url(../img/salas.jpg); }
+    .home-header .my-carousel-3 {
+      background-image: url(../img/carwash.jpg); }
   .home-header img {
-    width: 200px;
-    height: 700px; }
+    width: 100%;
+    height: 100%; }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 90px;
+  height: 400px;
   border-top: 1px solid #aaaaaa;
   padding: 24px 60px;
-  background-color: #aaaaaa;
-  color: blue; }
+  background-color: #0cc00c;
+  color: white; }
   @media (max-width: 575.98px) {
     footer {
       padding: 3px 6px; } }
-  footer h1 {
-    font-size: 5rem; }
+  footer h3 {
+    font-size: 2rem;
+    margin-bottom: 30px; }
+  footer .row .druga {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    footer .row .druga div {
+      width: 100%;
+      height: 60px; }
+      footer .row .druga div i {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: #099009; }
+      footer .row .druga div span {
+        font-size: 1.5rem;
+        margin-left: 5px; }
 
 .home-section-1 {
-  color: red;
-  padding: 20px; }
+  color: black;
+  padding: 0px 50px; }
+  .home-section-1 .baner {
+    color: black;
+    height: 200px; }
+    .home-section-1 .baner h2 {
+      padding: 10px 5px;
+      font-weight: bold; }
+      .home-section-1 .baner h2:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -30%;
+        width: 100%;
+        height: 10px;
+        background-color: #0cc00c;
+        border: 2px solid #c21633;
+        -webkit-transform: skewX(40deg);
+                transform: skewX(40deg); }
+  .home-section-1 .my-card {
+    height: 400px;
+    width: 100%;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .home-section-1 .my-card .image-container {
+      width: 100%;
+      height: 80%;
+      background-size: 150%;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-transition: 0.5s all;
+      transition: 0.5s all; }
+      .home-section-1 .my-card .image-container-1 {
+        background-image: url(../img/benzinska_pumpa.jpg); }
+        .home-section-1 .my-card .image-container-1:hover {
+          background-size: 110%; }
+      .home-section-1 .my-card .image-container-2 {
+        background-image: url(../img/salas.jpg); }
+        .home-section-1 .my-card .image-container-2:hover {
+          background-size: 110%; }
+      .home-section-1 .my-card .image-container-3 {
+        background-image: url(../img/carwash.jpg); }
+        .home-section-1 .my-card .image-container-3:hover {
+          background-size: 110%; }
+    .home-section-1 .my-card .title {
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px; }
+    .home-section-1 .my-card .my-btn {
+      background-color: #0cc00c;
+      display: block;
+      width: 60%;
+      margin-top: 15px;
+      -webkit-transition: 0.9s all;
+      transition: 0.9s all;
+      border-radius: 0%; }
+      .home-section-1 .my-card .my-btn:hover {
+        background-color: #099009; }
 
 .home-section-2 {
   color: red;
@@ -9367,10 +9500,16 @@ footer {
     padding: 50px; }
 
 .home-section-baner {
-  color: blue;
+  color: #ff1100;
   text-align: center;
   height: 200px;
   margin-top: 45px;
   border: 1px solid red; }
+  .home-section-baner .row {
+    height: 100%; }
+  .home-section-baner .kol {
+    border: 1px solid blue; }
+  .home-section-baner h1 {
+    color: blue; }
 
 /*# sourceMappingURL=main.css.map */
