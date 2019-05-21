@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('clean', function() {
-  del(['dist', 'assets/css/main.css*', 'assets/js/main*.js*']);
+  del(['docs', 'assets/css/main.css*', 'assets/js/main*.js*']);
 });
 
 gulp.task('renameSources', function() {
@@ -78,7 +78,7 @@ gulp.task('renameSources', function() {
 gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
   return gulp.src(['*.html', '*.php','*.css','favicon.ico',
                    "assets/img/**","assets/css/theme.css","assets/js/theme.js","assets/fonts/**"], { base: './'})
-            .pipe(gulp.dest('dist'));
+            .pipe(gulp.dest('docs'));
 });
 
 gulp.task('serve', ['watchFiles'], function(){
